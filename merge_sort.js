@@ -4,11 +4,8 @@ function mergeSort(arr) {
     }
 
     let arrMid = Math.floor(arr.length / 2)
-    console.log('mid', arrMid)
     let left = mergeSort(arr.slice(0, arrMid))
     let right = mergeSort(arr.slice(arrMid))
-console.log('left', left)
-console.log('right', right)
 
     return merge(left, right)
 }
