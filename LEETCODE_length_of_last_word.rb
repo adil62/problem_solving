@@ -12,7 +12,7 @@
 # @return {Integer}
 def length_of_last_word(s)
     words_arr = s.split(" ")
-    last_word = words_arr[words_arr.length-1]
+    last_word = words_arr[-1]
     
     return last_word.length
 end
