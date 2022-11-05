@@ -14,16 +14,15 @@
 # end
 # @param {ListNode} head
 # @return {ListNode}
-
 def delete_duplicates(head)
     node = head
 
     while (node != nil && node.next != nil)
         if node.val == node.next.val
             node.next = node.next.next
-            next
+        else      
+            node = node.next
         end
-        node = node.next
     end
 
     return head
