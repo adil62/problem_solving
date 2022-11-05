@@ -17,7 +17,7 @@
 def delete_duplicates(head)
     node = head
 
-    while (node != nil && node.next != nil)
+    while (node.next.nil?)
         if node.val == node.next.val
             node.next = node.next.next
         else      
