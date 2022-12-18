@@ -1,0 +1,12 @@
+GEM
+  specs:
+    prettyprint (0.1.0)
+
+PLATFORMS
+  x86_64-darwin-21
+
+DEPENDENCIES
+  prettyprint
+
+BUNDLED WITH
+   2.3.21
