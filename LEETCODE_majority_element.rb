@@ -23,6 +23,7 @@ end
 
 # Time complexity - O(nlogn)
 # Space complxity - O(1)
+# more than n/2 times occuring element is the majority element so if we sort and take the mid it would be the majority
 def majority_element(nums)
     nums = nums.sort
 
@@ -30,3 +31,5 @@ def majority_element(nums)
 end
 
 p majority_element([1,1,2,2,3,3,4,4])
+
+tenth,diploma,photo,aadhar.
