@@ -1,3 +1,5 @@
+# Time complexity: O(n^2)
+# Space complexity: O(n)
 def kids_with_candies(candies, extra_candies)
     result = []
     candies.length.times do |i|
