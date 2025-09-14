@@ -2,32 +2,18 @@
 // Unoptimised solution:
 // TC: O(2^n)
 public class Solution {
-    private int _m,_n, _res=0;
-    private int[,] memo;
-
-    public Solution() {}
-
     public int UniquePaths(int m, int n) {
-        _m = m;
-        _n = n;
-        Helper(0, 0);
-        return _res;
+        return Helper(0, 0, m , n);
     }
 
-    public int Helper(int currRow, int currCol) {
-        if (currRow == _m-1 && currCol == _n-1) {
-            _res += 1;
-            return 0;
-        }
-        if (currRow > _m-1 || currCol > _n-1) {
-            return 0;
-        }
-        Helper(currRow+1, currCol);
-        Helper(currRow, currCol+1);
-        return 0;
+    public int Helper(int r, int c, int m, int n) 
+    {
+        if (r == m - 1 && c == n - 1) return 1;
+        if (r >= m || c >= n) return 0;
+
+        return Helper(r+1, c, m, n) + Helper(r, c+1, m, n);
     }
 }
-
 
 // Optimized solution:
 // TC: O(m*n)
